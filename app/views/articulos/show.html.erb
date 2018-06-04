@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @articulo.titulo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @articulo.fecha %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= @articulo.imagen %>
+</p>
+
+<p>
+  <strong>Altimg:</strong>
+  <%= @articulo.altimg %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @articulo.contenido %>
+</p>
+
+<%= link_to 'Edit', edit_articulo_path(@articulo) %> |
+<%= link_to 'Back', articulos_path %>

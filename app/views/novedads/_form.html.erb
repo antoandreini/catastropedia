@@ -1,0 +1,47 @@
+<%= form_with(model: novedad, local: true) do |form| %>
+  <% if novedad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(novedad.errors.count, "error") %> prohibited this novedad from being saved:</h2>
+
+      <ul>
+      <% novedad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.datetime_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :copete %>
+    <%= form.text_area :copete %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagen %>
+    <%= form.text_field :imagen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :altimg %>
+    <%= form.text_field :altimg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contenido %>
+    <%= form.text_area :contenido %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @novedad.titulo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @novedad.fecha %>
+</p>
+
+<p>
+  <strong>Copete:</strong>
+  <%= @novedad.copete %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= @novedad.imagen %>
+</p>
+
+<p>
+  <strong>Altimg:</strong>
+  <%= @novedad.altimg %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @novedad.contenido %>
+</p>
+
+<%= link_to 'Edit', edit_novedad_path(@novedad) %> |
+<%= link_to 'Back', novedads_path %>
