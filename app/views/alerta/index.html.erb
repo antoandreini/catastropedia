@@ -25,6 +25,7 @@
                     </div>
                   </div>
                     <% if user_signed_in?%>
+                    
                     <div class="col-2" style="padding-top:5%"> 
                       <%=link_to 'Editar', edit_alertum_path(alertum), :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
                       <%= link_to 'Eliminar', alertum_path(alertum),method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
