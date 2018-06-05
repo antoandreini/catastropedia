@@ -1,36 +1,66 @@
 
 @import "bootstrap";
-/*
+
 nav.navbar {
+  background-color:#1C1C1C;
   height: 50pt;
-  background: rgba(183,222,237,1);
-  background: -moz-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 46%, rgba(33,180,226,1) 81%, rgba(183,222,237,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(46%, rgba(113,206,239,1)), color-stop(81%, rgba(33,180,226,1)), color-stop(100%, rgba(183,222,237,1)));
-  background: -webkit-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 46%, rgba(33,180,226,1) 81%, rgba(183,222,237,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 46%, rgba(33,180,226,1) 81%, rgba(183,222,237,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 46%, rgba(33,180,226,1) 81%, rgba(183,222,237,1) 100%);
+  margin-bottom: 20pt;
+  background: rgba(128,187,214,1);
+  background: -moz-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
+  background: -webkit-gradient(left top, right top, color-stop(10%, rgba(128,187,214,1)), color-stop(19%, rgba(125,191,215,1)), color-stop(36%, rgba(119,199,217,1)), color-stop(54%, rgba(124,210,212,1)), color-stop(74%, rgba(130,222,207,1)), color-stop(83%, rgba(130,222,195,1)), color-stop(96%, rgba(131,222,178,1)));
+  background: -webkit-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
+  background: -o-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
+  background: -ms-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
+  background: linear-gradient(to right, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bbd6', endColorstr='#83deb2', GradientType=1 );  
 }
 
+#logo img{
+  background:transparent;
+  height:auto;
+  width:40pt;
+  margin-right: 3 0pt;
+  border: 0pt;
+}
+
+
 nav.navbar  li {
+  margin-right: 15pt;
+  position: relative;
+  top:5pt;
   width:auto;
   height: 30pt;
+  list-style:none;
+}
+.navbar .nav-item .nav-link{
+  color: black;
+} 
+
+.navbar .nav-item:hover .nav-link {
+  color: white;
+}
+
+
+#navbarboton{
+  background: #89D370;
   color: black;
 }
 
-nav.navbar li:hover{
-  color:#89D370;
+#navbarboton:hover{
+  color: white;
 }
 
 
-nav.navbar button{
-  background: #89D370;
+#navbarboton .navbar-link{
+  margin: 10pt;
+  display: none;
 }
 
- #logo{
-  background:transparent;
-  height:auto;
-  width:50pt;
-  border: 0pt;
+@media screen and (min-width: 991px) {
+  nav.navbar{
+    z-index: 0;      
+  }
 }
-*/
+ 
+
 
