@@ -25,7 +25,7 @@ class NovedadsController < ApplicationController
   # POST /novedads.json
   def create
     @novedad = Novedad.new(novedad_params)
-
+    @novedad.user = current_user
     respond_to do |format|
       if @novedad.save
         format.html { redirect_to @novedad, notice: 'Novedad was successfully created.' }

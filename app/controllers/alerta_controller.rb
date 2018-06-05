@@ -4,7 +4,7 @@ class AlertaController < ApplicationController
   # GET /alerta
   # GET /alerta.json
   def index
-    @alerta = Alertum.all
+    @alerta = Alertum.all.order(:id).reverse
   end
 
   # GET /alerta/1
@@ -25,10 +25,10 @@ class AlertaController < ApplicationController
   # POST /alerta.json
   def create
     @alertum = Alertum.new(alertum_params)
-
+    @alertum.user = current_user
     respond_to do |format|
       if @alertum.save
-        format.html { redirect_to @alertum, notice: 'Alertum was successfully created.' }
+        format.html { redirect_to alerta_url, notice: 'Alertum was successfully created.' }
         format.json { render :show, status: :created, location: @alertum }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AlertaController < ApplicationController
   def update
     respond_to do |format|
       if @alertum.update(alertum_params)
-        format.html { redirect_to @alertum, notice: 'Alertum was successfully updated.' }
+        format.html { redirect_to alerta_url }
         format.json { render :show, status: :ok, location: @alertum }
       else
         format.html { render :edit }

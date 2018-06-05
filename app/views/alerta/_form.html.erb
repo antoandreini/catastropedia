@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :titulo %>
-    <%= form.text_field :titulo %>
+  <div class="form-group">
+    <%= form.label :título , :style => "font-weight:bold;color:#ddd"%> <span style="font-weight:bold;color:#ddd;text-decoration:underline">*</span>
+    <%= form.text_field :titulo, :class=>"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :zonas %>
-    <%= form.text_field :zonas %>
+  <div class="form-group">
+    <%= form.label :zonas, :style => "font-weight:bold;color:#ddd"%> <span style="font-weight:bold;color:#ddd;text-decoration:underline">*</span>
+    <%= form.text_field :zonas, :class=>"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :fecha %>
-    <%= form.datetime_select :fecha %>
+  <div class="form-group">
+    <%= form.label :fecha_de_emisión, :style => "font-weight:bold;color:#ddd"%> <span style="font-weight:bold;color:#ddd;text-decoration:underline">*</span><br>
+    <%= form.datetime_select :fecha, :class=>"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :descripcion %>
-    <%= form.text_area :descripcion %>
+  <div class="form-group">
+    <%= form.label :descripción, :style => "font-weight:bold;color:#ddd"%> <span style="font-weight:bold;color:#ddd;text-decoration:underline">*</span>
+    <%= form.text_area :descripcion, :class=>"form-control", :rows=>"5" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit  "Guardar", :class => "btn btn-block", :style => "background-color:#ddd;font-weight:bold;color:#001F3F" %>
   </div>
 <% end %>
