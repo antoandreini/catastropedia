@@ -3,33 +3,34 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-
+  <a class="navbar-brand logo" id="logo" href="/"><img src="https://cdn2.iconfinder.com/data/icons/Siena/32/globe%20green.png" alt="Logo" /></a>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">Actual</span></a>
+        <a class="nav-link" href="/">Inicio <span class="sr-only">Actual</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="/info">Informacion util</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="/contacto">Contacto</a>
       </li>
-      <% if user_signed_in? %>
-      <li>
-        <button type="submit" class="btn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></button>
-      </li>
-      <% else %>
-        <li>
-          <button type="submit" class="btn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>   <%= link_to "Iniciar sesión", new_user_session_path, :class => 'navbar-link '  %></button>
-        </li>
-      <% end %>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <li class="nav-item">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar noticias" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="navbarboton" type="submit">Buscar</button>
+      </form>
+    </li>
+    <% if user_signed_in? %>
+    <li class="nav-item">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton" > <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></button>
+    </li>
+    <% else %>
+      <li class="nav-item">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton">   <%= link_to "Iniciar sesión", new_user_session_path, :class => 'navbar-link '  %>Iniciar sesión</button>
+      </li>
+    <% end %>
   </div>
 </nav>
 </header>
