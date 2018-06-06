@@ -14,6 +14,9 @@ nav.navbar {
   background: linear-gradient(to right, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bbd6', endColorstr='#83deb2', GradientType=1 );  
 }
+body{
+  background-color:#ddd;
+}
 
 #logo img{
   background:transparent;
@@ -49,8 +52,6 @@ nav.navbar  li {
 #navbarboton:hover{
   color: white;
 }
-
-
 #navbarboton .navbar-link{
   margin: 10pt;
   display: none;

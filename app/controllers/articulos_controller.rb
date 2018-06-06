@@ -25,7 +25,7 @@ class ArticulosController < ApplicationController
   # POST /articulos.json
   def create
     @articulo = Articulo.new(articulo_params)
-
+    @articulo.user = current_user
     respond_to do |format|
       if @articulo.save
         format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
