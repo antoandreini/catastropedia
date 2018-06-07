@@ -8,25 +8,46 @@
     <div class="col">
       <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
         <div class="container">
-          <div class="form-group"></h2><%= link_to 'New Articulo', new_articulo_path, :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold'  %></div>
+
+        <% if user_signed_in?%>
+          <div class="form-group">
+            <div class="row">
+
+                <div class="col-3"></div>
+                <div class="col-6">
+                </h2 align="center"><%= link_to 'Publicar artículo', new_articulo_path, :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold'  %>
+                </div>
+                </div>
+            </div>
+          <% end%>
             <% @articulos.each do |articulo| %>
                 <div class="row">
                   <div class="col-1"></div>
+
+                  <% if user_signed_in?%>
                   <div class="col-9">
-                    <div class="card border-dark mb-3">
+                  <%else%>
+                    <div class="col-10">
+                  <%end%>
+                    <div class="card">
                       <div class="card-body">
-                        <h3 class="card-title" align="center" style="font-weight:bold;color:#C70E0B"> <%= articulo.titulo %></h3>
-                        <p class="card-subtitle mb-2" style="font-weight:bold"> <%= octicon "location", :height => 14,  :class => "right left", :"aria-label" => "zonas de alerta" %> Zonas: <%=articulo.titulo %></p>
-                        <p class="card-text"><%= articulo.contenido%></p>
-                        <p class="card-text" style="font-weight:bold"> <%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de emisión: <%=articulo.fecha %></p>
+                        <div class="row">
+                          <div class="col-6"> 
+                            <%=image_tag articulo.imagen, class:"card-img-top img-fluid", alt: articulo.altimg %>
+                            </div>
+                        <div class="col">
+                        <br>
+                        <h3 class="card-title" ><%= link_to articulo.titulo, articulo, :style=>"font-weight:bold;color:#C70E0B" %></h3>
+                        <p class="card-text" style="font-weight:bold"><%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de publicación: <%=articulo.fecha %>
                       </div>
-                    </div>
+                      </div>
+                      </div>
+                  </div>
                   </div>
                     <% if user_signed_in?%>
                     <div class="col-2" style="padding-top:5%"> 
                       <%=link_to 'Editar', edit_articulo_path(articulo), :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
                       <%= link_to 'Eliminar', articulo,method: :delete, data: { confirm: '¿Estás seguro?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
-                      <%= link_to 'Show', articulo %>
                     </div>
                     <% end %>
                 </div>

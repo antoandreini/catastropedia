@@ -14,7 +14,11 @@
               <% @alerta.each do |alertum| %>
                 <div class="row">
                   <div class="col-1"></div>
+                  <% if user_signed_in?%>
                   <div class="col-9">
+                  <%else%>
+                    <div class="col-10">
+                  <%end%>
                     <div class="card border-dark mb-3">
                       <div class="card-body">
                         <h3 class="card-title" align="center" style="font-weight:bold;color:#C70E0B"> <%= alertum.titulo %></h3>

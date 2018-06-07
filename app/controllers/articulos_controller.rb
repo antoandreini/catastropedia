@@ -14,11 +14,15 @@ class ArticulosController < ApplicationController
 
   # GET /articulos/new
   def new
-    @articulo = Articulo.new
+
+    redirect_to articulos_path
+    #@articulo = Articulo.new
   end
 
   # GET /articulos/1/edit
   def edit
+    
+    redirect_to articulos_path
   end
 
   # POST /articulos

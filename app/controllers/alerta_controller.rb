@@ -14,11 +14,14 @@ class AlertaController < ApplicationController
 
   # GET /alerta/new
   def new
-    @alertum = Alertum.new
+
+    redirect_to root_path
+    #@alertum = Alertum.new
   end
 
   # GET /alerta/1/edit
   def edit
+    redirect_to root_path
   end
 
   # POST /alerta
