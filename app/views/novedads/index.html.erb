@@ -1,37 +1,52 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+<div class="row">
+    <div class="col">
+      <h1 align="center" style="font-weight:bold;color:#001F3F">Novedades</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
+        <div class="container">
 
-<h1>Novedads</h1>
+        <% if user_signed_in?%>
+          <div class="form-group">
+            <div class="row">
 
-<table>
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Fecha</th>
-      <th>Copete</th>
-      <th>Imagen</th>
-      <th>Altimg</th>
-      <th>Contenido</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                <div class="col-3"></div>
+                <div class="col-6">
+                </h2 align="center"><%= link_to 'Publicar noticia', new_novedad_path, :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold'  %>
+                </div>
+                </div>
+            </div>
+          <% end%>
+          <% @novedads.each do |novedad| %>
+          <div class="row">
+                  <div class="col-1"></div>
 
-  <tbody>
-    <% @novedads.each do |novedad| %>
-      <tr>
-        <td><%= novedad.titulo %></td>
-        <td><%= novedad.fecha %></td>
-        <td><%= novedad.copete %></td>
-        <td><%= novedad.imagen %></td>
-        <td><%= novedad.altimg %></td>
-        <td><%= novedad.contenido %></td>
-        <td><%= link_to 'Show', novedad %></td>
-        <td><%= link_to 'Edit', edit_novedad_path(novedad) %></td>
-        <td><%= link_to 'Destroy', novedad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+                  <% if user_signed_in?%>
+                  <div class="col-9">
+                  <%else%>
+                    <div class="col-10">
+                  <%end%>
+                    <div class="card">
+                      <%=image_tag novedad.imagen, class:"card-img-top img-fluid", alt: novedad.altimg %>
+                      <div class="card-body">
+                        <br>
+                        <h3 class="card-title" align="center" ><%= link_to novedad.titulo, novedad, :style=>"font-weight:bold;color:#C70E0B" %></h3>
+                        <p class="card-text"> <%= novedad.copete%> </p>
+                        <p class="card-text" align="left" style="font-weight:bold"><%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de publicación: <%=novedad.fecha %>
+                      </div>
+                  </div>
+                  </div>
+                    <% if user_signed_in?%>
+                    <div class="col-2" style="padding-top:5%"> 
+                      <%=link_to 'Editar', edit_novedad_path(novedad), :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
+                      <%= link_to 'Eliminar', novedad,method: :delete, data: { confirm: '¿Estás seguro?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
+                    </div>
+                    <% end %>
+                </div>
+                <% end %>
 <br>
+</div>
 
-<%= link_to 'New Novedad', new_novedad_path %>

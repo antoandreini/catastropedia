@@ -14,18 +14,22 @@ class ArticulosController < ApplicationController
 
   # GET /articulos/new
   def new
-    @articulo = Articulo.new
+
+    redirect_to articulos_path
+    #@articulo = Articulo.new
   end
 
   # GET /articulos/1/edit
   def edit
+    
+    redirect_to articulos_path
   end
 
   # POST /articulos
   # POST /articulos.json
   def create
     @articulo = Articulo.new(articulo_params)
-
+    @articulo.user = current_user
     respond_to do |format|
       if @articulo.save
         format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }

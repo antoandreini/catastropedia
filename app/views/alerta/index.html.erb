@@ -1,33 +1,45 @@
 
+<div class="container">
 
-<h1>Catastropedia</h1>
+  <div class="row">
+    <div class="col">
+      <h1 align="center" style="font-weight:bold;color:#001F3F">Catastropedia</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
+        <div class="container">
+          <div class="form-group"><h2 align="center" style="font-weight:bold;color:#ddd">Alertas activas</h2></div>
+              <% @alerta.each do |alertum| %>
+                <div class="row">
+                  <div class="col-1"></div>
+                  <% if user_signed_in?%>
+                  <div class="col-9">
+                  <%else%>
+                    <div class="col-10">
+                  <%end%>
+                    <div class="card border-dark mb-3">
+                      <div class="card-body">
+                        <h3 class="card-title" align="center" style="font-weight:bold;color:#C70E0B"> <%= alertum.titulo %></h3>
+                        <p class="card-subtitle mb-2" style="font-weight:bold"> <%= octicon "location", :height => 14,  :class => "right left", :"aria-label" => "zonas de alerta" %> Zonas: <%=alertum.zonas %></p>
+                        <p class="card-text"><%= alertum.descripcion %></p>
+                        <p class="card-text" style="font-weight:bold"> <%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de emisión: <%=alertum.fecha %></p>
+                      </div>
+                    </div>
+                  </div>
+                    <% if user_signed_in?%>
+                    <div class="col-2" style="padding-top:5%"> 
+                      <%=link_to 'Editar', edit_alertum_path(alertum), :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
+                      <%= link_to 'Eliminar', alertum_path(alertum),method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
+                    </div>
+                    <% end %>
+                </div>
+              <% end %>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Zonas</th>
-      <th>Fecha</th>
-      <th>Descripcion</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @alerta.each do |alertum| %>
-      <tr>
-        <td><%= alertum.titulo %></td>
-        <td><%= alertum.zonas %></td>
-        <td><%= alertum.fecha %></td>
-        <td><%= alertum.descripcion %></td>
-        <td><%= link_to 'Show', alertum %></td>
-        <td><%= link_to 'Edit', edit_alertum_path(alertum) %></td>
-        <td><%= link_to 'Destroy', alertum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Alertum', new_alertum_path %>

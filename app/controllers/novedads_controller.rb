@@ -14,18 +14,20 @@ class NovedadsController < ApplicationController
 
   # GET /novedads/new
   def new
-    @novedad = Novedad.new
+    redirect_to novedads_path
+    #@novedad = Novedad.new
   end
 
   # GET /novedads/1/edit
   def edit
+    redirect_to novedads_path
   end
 
   # POST /novedads
   # POST /novedads.json
   def create
     @novedad = Novedad.new(novedad_params)
-
+    @novedad.user = current_user
     respond_to do |format|
       if @novedad.save
         format.html { redirect_to @novedad, notice: 'Novedad was successfully created.' }

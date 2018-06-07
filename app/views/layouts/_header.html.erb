@@ -7,13 +7,21 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Inicio <span class="sr-only">Actual</span></a>
+        <a class="nav-link" href="/">Inicio</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/novedads">Novedades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/info">Informacion util</a>
+        <a class="nav-link" href="/articulos">Información útil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contacto">Contacto</a>
+        <% if user_signed_in? %>
+          <%=link_to 'Emitir alerta', new_alertum_path, :class => 'btn btn-outline-success my-2 my-sm-0', :id=> 'navbarboton' %>
+        <% else %>
+          <a class="nav-link" href="#">Contacto</a>
+        <% end %>
       </li>
     </ul>
     <li class="nav-item">
@@ -29,7 +37,7 @@
     <% else %>
       <li class="nav-item">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton2">   <%= link_to "Iniciar sesión", new_user_session_path, :class => 'navbar-link '  %>Iniciar sesión</button>
-      </li>
+    </li>
     <% end %>
   </div>
 </nav>
