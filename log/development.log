@@ -13629,3 +13629,658 @@ Processing by AlertaController#index as HTML
 Completed 200 OK in 2742ms (Views: 2740.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:11:26 -0300
+  [1m[35m (13.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (39.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (67.6ms)
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:11:30 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 5996ms (Views: 5993.6ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 8505ms (Views: 8428.9ms | ActiveRecord: 43.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:11:47 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (5.1ms)
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:11:47 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (6.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 222ms (Views: 218.5ms | ActiveRecord: 0.9ms)
+
+
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 158ms (Views: 148.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:12:07 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:12:25 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (3.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2470ms (Views: 2464.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:12:59 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2715ms (Views: 2712.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:13:20 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2719ms (Views: 2717.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:14:44 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2526ms (Views: 2524.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:15:02 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2517ms (Views: 2514.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:15:53 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2688ms (Views: 2686.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:17:43 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2527ms (Views: 2524.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:18:17 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2466ms (Views: 2463.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:18:30 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 2614ms (Views: 2611.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:19:01 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2642ms (Views: 2638.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:19:30 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2749ms (Views: 2746.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:19:51 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (3.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2593ms (Views: 2587.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:20:20 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (2.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2610ms (Views: 2604.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:20:37 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2673ms (Views: 2670.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:20:47 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2501ms (Views: 2497.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:20:56 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2625ms (Views: 2621.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:21:21 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2520ms (Views: 2517.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:21:39 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2657ms (Views: 2654.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:22:24 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2735ms (Views: 2731.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:22:38 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2510ms (Views: 2508.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:22:50 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2498ms (Views: 2496.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:24:14 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2494ms (Views: 2491.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:24:38 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (1.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 2766ms (Views: 2762.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:24:58 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2568ms (Views: 2565.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:26:32 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 2769ms (Views: 2766.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:27:45 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2634ms (Views: 2631.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:28:47 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2551ms (Views: 2549.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:29:10 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2424ms (Views: 2422.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:30:15 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2503ms (Views: 2500.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:31:11 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2478ms (Views: 2476.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:31:36 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2620ms (Views: 2617.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:32:04 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2627ms (Views: 2621.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:32:38 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2577ms (Views: 2575.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:32:56 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "    top:: 10pt": expected "{", was ";"):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:78
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3120996303078472387_70011508593360'
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:33:01 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (2.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 2757ms (Views: 2751.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:33:12 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2444ms (Views: 2441.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:33:33 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2463ms (Views: 2459.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:34:41 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2563ms (Views: 2561.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:35:33 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2724ms (Views: 2721.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:36:05 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2492ms (Views: 2489.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:36:54 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:93
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3120996303078472387_70011509378380'
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:37:07 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2586ms (Views: 2583.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:37:39 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2615ms (Views: 2611.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:38:21 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2284ms (Views: 2282.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:38:34 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (1.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2574ms (Views: 2570.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:39:03 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (1.3ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2464ms (Views: 2460.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:39:14 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2886ms (Views: 2882.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:40:46 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:95
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3120996303078472387_70011520062300'
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:41:05 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 2694ms (Views: 2692.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:41:25 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2475ms (Views: 2471.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:41:48 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:42:00 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2641ms (Views: 2638.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:42:21 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2871ms (Views: 2869.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:42:50 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2590ms (Views: 2587.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:43:50 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2840ms (Views: 2837.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:44:12 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2778ms (Views: 2773.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-07 18:44:23 -0300
+Processing by AlertaController#index as HTML
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta"[0m
+  ↳ app/views/alerta/index.html.erb:17
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.4ms)
+
+

@@ -5,14 +5,14 @@ nav.navbar {
   background-color:#1C1C1C;
   height: 50pt;
   margin-bottom: 20pt;
-  background: rgba(128,187,214,1);
-  background: -moz-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
-  background: -webkit-gradient(left top, right top, color-stop(10%, rgba(128,187,214,1)), color-stop(19%, rgba(125,191,215,1)), color-stop(36%, rgba(119,199,217,1)), color-stop(54%, rgba(124,210,212,1)), color-stop(74%, rgba(130,222,207,1)), color-stop(83%, rgba(130,222,195,1)), color-stop(96%, rgba(131,222,178,1)));
-  background: -webkit-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
-  background: -o-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
-  background: -ms-linear-gradient(left, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
-  background: linear-gradient(to right, rgba(128,187,214,1) 10%, rgba(125,191,215,1) 19%, rgba(119,199,217,1) 36%, rgba(124,210,212,1) 54%, rgba(130,222,207,1) 74%, rgba(130,222,195,1) 83%, rgba(131,222,178,1) 96%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bbd6', endColorstr='#83deb2', GradientType=1 );  
+  background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+  background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+  background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+  background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+  z-index: 1000;
 }
 
 #logo img{
@@ -25,6 +25,7 @@ nav.navbar {
 
 
 nav.navbar  li {
+  overflow: hidden;
   margin-right: 15pt;
   position: relative;
   top:5pt;
@@ -41,24 +42,57 @@ nav.navbar  li {
 }
 
 
-#navbarboton{
+#navbarboton, #navbarboton2 {
   background: #89D370;
   color: black;
 }
 
-#navbarboton:hover{
+#navbarboton:hover, #navbarboton2:hover,{
   color: white;
 }
 
 
-#navbarboton .navbar-link{
+#navbarboton .navbar-link, #navbarboton2 .navbar-link{
   margin: 10pt;
   display: none;
 }
 
-@media screen and (min-width: 991px) {
-  nav.navbar{
-    z-index: 0;      
+@media screen and (max-width: 991px) {
+  nav.navbar li{
+    background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+    background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 ); 
+    border-style: dotted;
+    border-bottom: 1pt;
+    display: block;
+    width: 50%;
+    height: 40pt;
+  }
+
+  .navbar .nav-item .nav-link{
+    position: relative;
+    margin-left: 10pt;
+  }
+
+  #navbarboton2{
+    position: relative;
+    margin-left: 10pt;
+    top:5pt;
+
+  }
+
+  .navbar .nav-item  form{
+    position: relative;
+    margin-left: 10pt;
+  }
+
+  .navbar .nav-item  input{
+    width:60pt; 
+    margin-right: 10pt;
   }
 }
  

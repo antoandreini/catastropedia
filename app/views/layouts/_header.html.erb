@@ -24,11 +24,11 @@
     </li>
     <% if user_signed_in? %>
     <li class="nav-item">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton" > <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton2" > <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></button>
     </li>
     <% else %>
       <li class="nav-item">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton">   <%= link_to "Iniciar sesión", new_user_session_path, :class => 'navbar-link '  %>Iniciar sesión</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarboton2">   <%= link_to "Iniciar sesión", new_user_session_path, :class => 'navbar-link '  %>Iniciar sesión</button>
       </li>
     <% end %>
   </div>
