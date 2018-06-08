@@ -23254,3 +23254,2523 @@ Processing by AlertaController#index as HTML
 Completed 200 OK in 91ms (Views: 87.7ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:55:53 -0300
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (40.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+Completed 200 OK in 1556ms (Views: 1445.6ms | ActiveRecord: 47.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:56:24 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 4928ms (Views: 4924.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:57:35 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:57:43 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2018-06-08 12:57:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2018-06-08 12:58:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2018-06-08 12:58:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2018-06-08 12:58:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2018-06-08 12:58:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:13 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 12:58:17 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (40.0ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 172ms (Views: 92.8ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:19 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:20 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 133ms (Views: 129.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 92.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 120ms (Views: 115.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:24 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:24 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 95ms (Views: 90.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 12:58:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:46 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 91ms (Views: 87.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 94ms (Views: 90.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 101ms (Views: 97.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 117ms (Views: 114.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 98.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:00:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:01:57 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:01:59 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 82ms (Views: 74.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:02:00 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 108ms (Views: 103.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:02:00 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:02:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 97ms (Views: 93.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:02:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:05:19 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:05:42 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2459ms (Views: 2455.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:05:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:05:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 13:05:51 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:05:53 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 82ms (Views: 78.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 13:06:14 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 129ms (Views: 124.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:16 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 109ms (Views: 105.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:16 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:17 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:18 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 144ms (Views: 140.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:18 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 113ms (Views: 109.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:06:18 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+Completed 200 OK in 96ms (Views: 92.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:33 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 89ms (Views: 84.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 13:08:49 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 79.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 98ms (Views: 94.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 109ms (Views: 104.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:51 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 100ms (Views: 96.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:08:51 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 92ms (Views: 88.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:09:07 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 2531ms (Views: 2528.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:09:13 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.3ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:10:38 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:10:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 94ms (Views: 89.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:10:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 95ms (Views: 91.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:10:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:10:59 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:11:11 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:12:11 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 74ms (Views: 69.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:12:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 99ms (Views: 95.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:12:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 98ms (Views: 93.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:12:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:12:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 108ms (Views: 104.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:13:54 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:17:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:17:26 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:21:10 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:21:27 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:22:28 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 123ms (Views: 117.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:22:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 68ms (Views: 64.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:22:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:23:05 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:25:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:25:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:26:07 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:26:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:26:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:26:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:26:26 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 59.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:26:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:27:08 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:27:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:27:14 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:27:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:27:28 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:27:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:27:59 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:27:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:28:29 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:28:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:29:46 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2594ms (Views: 2589.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:29:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:30:14 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2611ms (Views: 2608.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:30:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:30:31 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2464ms (Views: 2460.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:30:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:30:58 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2466ms (Views: 2463.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:31:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:31:08 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2390ms (Views: 2387.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:31:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:31:36 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2324ms (Views: 2319.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:31:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:31:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2645ms (Views: 2641.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:31:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:03 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2373ms (Views: 2370.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:32:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:27 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2540ms (Views: 2537.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:32:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 13:32:34 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.7ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:37 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 108ms (Views: 104.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:38 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 94ms (Views: 86.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:38 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:39 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 90ms (Views: 87.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:40 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:40 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 85ms (Views: 80.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 89ms (Views: 84.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:42 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 103ms (Views: 95.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 90ms (Views: 86.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 94ms (Views: 90.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:32:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:54 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 85ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:56 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 89ms (Views: 86.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:56 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:32:57 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 100ms (Views: 97.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 13:33:01 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (41.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 165ms (Views: 68.4ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:33:03 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 119ms (Views: 112.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:33:36 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:33:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 13:33:42 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 82.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 13:35:45 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 73.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 13:35:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:35:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 13:35:51 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (1.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 98ms (Views: 92.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 13:35:54 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 103ms (Views: 98.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 13:41:01 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.5ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:00:03 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.0ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2410ms (Views: 2405.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:00:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:00:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:00:17 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.0ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2462ms (Views: 2459.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:00:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:05:45 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.0ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:05:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:05:47 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:05:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:05:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:05:55 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.4ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 2464ms (Views: 2461.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:05:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:06:46 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.2ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:06:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:06:54 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2447ms (Views: 2443.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:06:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:07:15 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.7ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 73ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:07:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:07:20 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.5ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:07:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 14:07:28 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.5ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/js/masonry.pkgd.js" for 127.0.0.1 at 2018-06-08 14:07:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/js/masonry.pkgd.js"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
