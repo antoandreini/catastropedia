@@ -1683,3 +1683,227 @@ Processing by ContactosController#new as HTML
 Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-08 18:54:01 -0300
+  [1m[35m (22.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (55.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1989ms (Views: 1835.6ms | ActiveRecord: 63.6ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 18:55:24 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (30.2ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 124ms (Views: 61.9ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 18:55:28 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (40.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 45.1ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/articulos/6" for 127.0.0.1 at 2018-06-08 18:55:35 -0300
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mUser Load (51.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:38
+  Rendered articulos/show.html.erb within layouts/application (151.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 219ms (Views: 137.3ms | ActiveRecord: 56.7ms)
+
+
+Started GET "/articulos/6" for 127.0.0.1 at 2018-06-08 18:57:12 -0300
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:38
+  Rendered articulos/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 48.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articulos/6" for 127.0.0.1 at 2018-06-08 18:57:14 -0300
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:38
+  Rendered articulos/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 53.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:58:13 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (160.3ms)
+  Rendered contactos/new.html.erb within layouts/application (170.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 248ms (Views: 227.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:58:38 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (3.9ms)
+  Rendered contactos/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:58:43 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (1.4ms)
+  Rendered contactos/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:58:45 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (3.6ms)
+  Rendered contactos/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contactos" for 127.0.0.1 at 2018-06-08 18:59:03 -0300
+Processing by ContactosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/rw5K6GK7prSelqNOFUXi6KJShFiHCnoxVV6TqZRjRfZD5QOtWzHeTiV0GhHSZ00SfOhATT/RvzJ+tTJqZPqvw==", "contacto"=>{"asunto"=>"", "email"=>"", "mensaje"=>""}, "commit"=>"Enviar mensaje"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (3.5ms)
+  Rendered contactos/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 40.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contactos" for 127.0.0.1 at 2018-06-08 18:59:26 -0300
+Processing by ContactosController#index as HTML
+  Rendering contactos/index.html.erb within layouts/application
+  Rendered contactos/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contactos" for 127.0.0.1 at 2018-06-08 18:59:32 -0300
+Processing by ContactosController#index as HTML
+  Rendering contactos/index.html.erb within layouts/application
+  Rendered contactos/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:59:33 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (5.4ms)
+  Rendered contactos/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contactos" for 127.0.0.1 at 2018-06-08 18:59:40 -0300
+Processing by ContactosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FTJEKyLswDgb+N/FXrON7LldqfSXCVtWdVC0pOwzaaGOUjIrP+12O+Ej/U2eUsHDrFfvAQz3xlD4JYtRY70oVw==", "contacto"=>{"asunto"=>"", "email"=>"", "mensaje"=>""}, "commit"=>"Enviar mensaje"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (3.0ms)
+  Rendered contactos/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contactos" for 127.0.0.1 at 2018-06-08 18:59:51 -0300
+Processing by ContactosController#index as HTML
+  Rendering contactos/index.html.erb within layouts/application
+  Rendered contactos/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contactos/new" for 127.0.0.1 at 2018-06-08 18:59:53 -0300
+Processing by ContactosController#new as HTML
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (2.7ms)
+  Rendered contactos/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contactos" for 127.0.0.1 at 2018-06-08 18:59:58 -0300
+Processing by ContactosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bXmfrbj5FafJy/mo66BQX2B9g0Z4hcyOUerPSf06R+z2GemtpfijpDMQ2yArQRxwdXfFs+N7UYjcn/C8crQGGg==", "contacto"=>{"asunto"=>"", "email"=>"", "mensaje"=>""}, "commit"=>"Enviar mensaje"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/contactos_controller.rb:30
+  Rendering contactos/new.html.erb within layouts/application
+  Rendered contactos/_form.html.erb (3.6ms)
+  Rendered contactos/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 19:02:48 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/novedads/8" for 127.0.0.1 at 2018-06-08 19:02:54 -0300
+Processing by NovedadsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT  "novedads".* FROM "novedads" WHERE "novedads"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/novedads_controller.rb:69
+  Rendering novedads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/show.html.erb:36
+  Rendered novedads/show.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 64.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 19:03:01 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.4ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+

@@ -12,7 +12,7 @@
 <div class="container">
 <div class="row">
       <div class="col">
-        <h1 align="center" style="font-weight:bold;color:#001F3F">Novedades</h1>
+        <h1 align="center" tabindex=0 style="font-weight:bold;color:#001F3F">Novedades</h1>
       </div>
     </div>
   <div class="col">
@@ -26,7 +26,7 @@
                     <div class="col-10">
                   <%end%>
                       <div class="card border-dark mb-3">
-                        <div class="card-body">
+                        <div class="card-body" tabindex=0>
                           <h3 class="card-title" align="center" style="font-weight:bold;color:#C70E0B"> <%= @novedad.titulo %></h3>
                           <p class="card-text"><%= @novedad.copete%></p>
                           <%=image_tag @novedad.imagen, class:"card-img-top img-fluid", alt: @novedad.altimg %>

@@ -12,7 +12,7 @@
 
   <div class="row">
     <div class="col">
-      <h1 align="center" style="font-weight:bold;color:#001F3F">Catastropedia</h1>
+      <h1 align="center" tabindex=0 style="font-weight:bold;color:#001F3F">Catastropedia</h1>
     </div>
   </div>
   <div class="row">
@@ -22,14 +22,14 @@
           <div class="row">
           <div class="col-4"></div>
           <div class="col-4">
-            <div class="alert alert-light" style="font-weight:bold;color:#C70E0B" role="alert">
+            <div class="alert alert-light" tabindex=0 style="font-weight:bold;color:#C70E0B" role="alert">
             <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
             </div>
           </div>
           </div>
           <%- end -%>  
         <div class="container">
-          <div class="form-group"><h2 align="center" style="font-weight:bold;color:#ddd">Alertas activas</h2></div>
+          <div class="form-group"><h2 align="center" tabindex=0 style="font-weight:bold;color:#ddd">Alertas activas</h2></div>
            
               <% @alerta.each do |alertum| %>
                 <div class="row">
@@ -40,7 +40,7 @@
                     <div class="col-10">
                   <%end%>
                     <div class="card border-dark mb-3">
-                      <div class="card-body">
+                      <div class="card-body" tabindex=0>
                         <h3 class="card-title" align="center" style="font-weight:bold;color:#C70E0B"> <%= alertum.titulo %></h3>
                         <p class="card-subtitle mb-2" style="font-weight:bold"> <%= octicon "location", :height => 14,  :class => "right left", :"aria-label" => "zonas de alerta" %> Zonas: <%=alertum.zonas %></p>
                         <p class="card-text"><%= alertum.descripcion %></p>
