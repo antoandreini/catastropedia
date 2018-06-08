@@ -54,7 +54,7 @@
                       <%=image_tag novedad.imagen, class:"card-img-top img-fluid", alt: novedad.altimg %>
                       <div class="card-body">
                         <br>
-                        <h3 class="card-title" align="center" ><%= link_to novedad.titulo, novedad, :style=>"font-weight:bold;color:#C70E0B" %></h3>
+                        <h3 class="card-title" align="center" ><span class="sr-only">Link a la novedad</span><%= link_to novedad.titulo, novedad, :style=>"font-weight:bold;color:#C70E0B" %></h3>
                         <p class="card-text"> <%= novedad.copete%> </p>
                         <p class="card-text" align="left" style="font-weight:bold"><%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de publicación: <%=novedad.fecha %>
                       </div>

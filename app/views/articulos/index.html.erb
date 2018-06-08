@@ -35,7 +35,7 @@
 
                 <div class="col-3"></div>
                 <div class="col-6">
-                </h2 align="center"><%= link_to 'Publicar artículo', new_articulo_path, :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold'  %>
+                </h2 align="center"><%= link_to 'Nuevo artículo', new_articulo_path, :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold'  %>
                 </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                             </div>
                         <div class="col">
                         <br>
-                        <h3 class="card-title" ><%= link_to articulo.titulo, articulo, :style=>"font-weight:bold;color:#C70E0B" %></h3>
+                        <h3 class="card-title" ><span class="sr-only">Link al artículo</span><%= link_to articulo.titulo, articulo, :style=>"font-weight:bold;color:#C70E0B" %></h3>
                         <p class="card-text" style="font-weight:bold"><%= octicon "calendar", :height => 14,  :class => "right left", :"aria-label" => "fecha de alerta" %> Fecha de publicación: <%=articulo.fecha %></p>
                       </div>
                       </div>
