@@ -21,8 +21,8 @@ default: &default
   host: localhost
   timeout: 5000
   pool: 5
-  username: antoandreini
-  password: mimichi1995
+  username: postgres
+  password: postgres
 
 development:
   <<: *default

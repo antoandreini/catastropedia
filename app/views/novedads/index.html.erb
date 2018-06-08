@@ -1,4 +1,15 @@
+ <div class="row">
+ <div class="col">
+<nav aria-label="breadcrumb" style="float:left">
+  <ol class="breadcrumb" style="background-color:#ddd" >
+    <li class="breadcrumb-item" ><a href="/"style="font-weight:bold;color:#001F3F">Inicio</a></li>
+    <li class="breadcrumb-item active" style="color:black" aria-current="page">Novedades</li>
+  </ol>
+</nav>
+</div>
+</div>
 <div class="container">
+
 <div class="row">
     <div class="col">
       <h1 align="center" style="font-weight:bold;color:#001F3F">Novedades</h1>
@@ -7,6 +18,16 @@
   <div class="row">
     <div class="col">
       <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
+      <%- flash.each do |name, msg| -%>
+          <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="alert alert-light" style="font-weight:bold;color:#C70E0B" role="alert">
+            <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+            </div>
+          </div>
+          </div>
+          <%- end -%> 
         <div class="container">
 
         <% if user_signed_in?%>
@@ -46,6 +67,7 @@
                     </div>
                     <% end %>
                 </div>
+                <br>
                 <% end %>
 <br>
 </div>

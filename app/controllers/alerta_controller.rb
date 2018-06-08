@@ -31,7 +31,7 @@ class AlertaController < ApplicationController
     @alertum.user = current_user
     respond_to do |format|
       if @alertum.save
-        format.html { redirect_to alerta_url, notice: 'Alertum was successfully created.' }
+        format.html { redirect_to alerta_url}
         format.json { render :show, status: :created, location: @alertum }
       else
         format.html { render :new }
@@ -59,7 +59,7 @@ class AlertaController < ApplicationController
   def destroy
     @alertum.destroy
     respond_to do |format|
-      format.html { redirect_to alerta_url, notice: 'Alertum was successfully destroyed.' }
+      format.html { redirect_to alerta_url, notice: 'Alerta eliminada correctamente.' }
       format.json { head :no_content }
     end
   end

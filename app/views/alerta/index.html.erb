@@ -1,4 +1,13 @@
 
+<div class="row">
+<div class="col">
+<nav aria-label="breadcrumb" style="float:left">
+  <ol class="breadcrumb" style="background-color:#ddd">
+    <li class="breadcrumb-item active" style="font-weight:bold;color:black" aria-current="page">Inicio</li>
+  </ol>
+</nav>
+</div>
+</div>
 <div class="container">
 
   <div class="row">
@@ -9,8 +18,19 @@
   <div class="row">
     <div class="col">
       <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
+      <%- flash.each do |name, msg| -%>
+          <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="alert alert-light" style="font-weight:bold;color:#C70E0B" role="alert">
+            <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+            </div>
+          </div>
+          </div>
+          <%- end -%>  
         <div class="container">
           <div class="form-group"><h2 align="center" style="font-weight:bold;color:#ddd">Alertas activas</h2></div>
+           
               <% @alerta.each do |alertum| %>
                 <div class="row">
                   <div class="col-1"></div>
@@ -31,7 +51,7 @@
                     <% if user_signed_in?%>
                     <div class="col-2" style="padding-top:5%"> 
                       <%=link_to 'Editar', edit_alertum_path(alertum), :class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
-                      <%= link_to 'Eliminar', alertum_path(alertum),method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
+                      <%= link_to 'Eliminar', alertum_path(alertum),method: :delete, data: { confirm: '¿Estás seguro?' },:class => 'btn btn-block', :style =>'background-color:#ddd;color:#001F3F;font-weight:bold' %>
                     </div>
                     <% end %>
                 </div>
