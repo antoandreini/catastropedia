@@ -16,13 +16,19 @@
       <li class="nav-item">
         <a class="nav-link" href="/articulos">Información útil</a>
       </li>
-      <li class="nav-item">
+      
         <% if user_signed_in? %>
-          <%=link_to 'Emitir alerta', new_alertum_path, :class => 'btn btn-outline-success my-2 my-sm-0', :id=> 'navbarboton' %>
-        <% else %>
-          <a class="nav-link" href="#">Contacto</a>
-        <% end %>
+      <li class="nav-item">
+          <a class="nav-link" href="/contactos">Contacto</a>
       </li>
+      <li class="nav-item">
+          <%=link_to 'Emitir alerta', new_alertum_path, :class => 'btn btn-outline-success my-2 my-sm-0', :id=> 'navbarboton' %>
+      </li>
+        <% else %>
+      <li class="nav-item">
+          <a class="nav-link" href="/contactos/new">Contacto</a>
+      </li>
+        <% end %>
     </ul>
     <li class="nav-item">
       <form class="form-inline my-2 my-lg-0">
