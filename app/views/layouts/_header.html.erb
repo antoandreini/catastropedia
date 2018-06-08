@@ -3,10 +3,10 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand logo" id="logo" href="/"><img src="https://cdn2.iconfinder.com/data/icons/Siena/32/globe%20green.png" alt="Logo" /></a>
+  <a class="navbar-brand logo" id="logo" href="/"><img src="https://cdn4.iconfinder.com/data/icons/general10/png/256/world.png" alt="Logo" /></a>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/">Inicio</a>
       </li>
       
@@ -27,18 +27,18 @@
     <li class="nav-item">
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar noticias" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" id="navbarboton" type="submit">Buscar</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" id="navbarbotonbuscar" type="submit">Buscar</button>
       </form>
     </li>
     <% if user_signed_in? %>
     <li class="nav-item">
-      <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'btn btn-outline-success my-2 my-sm-0', :id => 'navbarboton'   %></button>
+      <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => 'btn btn-outline-success my-2 my-sm-0', :id => 'navbarboton'   %>
     </li>
     <% else %>
       <li class="nav-item">
          <%= link_to "Iniciar sesión", new_user_session_path, :class => 'btn btn-outline-success my-2 my-sm-0', :id => 'navbarboton'  %>
       </li>
-    <% end %>
+    <%end%>
   </div>
 </nav>
 </header>

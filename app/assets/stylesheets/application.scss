@@ -1,25 +1,29 @@
 
 @import "bootstrap";
-
+body{
+  background: #a4c6db;
+}
 nav.navbar {
-  background-color:grey;
+  background-color:black;
   height: 50pt;
   margin-bottom: 20pt;
-  background: blue;
+  background:#e2e2e2;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75); 
   z-index: 1000;
-}
+  }
 
 #logo img{
   background:transparent;
   height:auto;
-  width:40pt;
+  width:60pt;
   margin-right: 3 0pt;
   border: 0pt;
 }
 
 
-nav.navbar  li {
-  overflow: hidden;
+nav.navbar  li{
   margin-right: 15pt;
   position: relative;
   top:5pt;
@@ -31,40 +35,37 @@ nav.navbar  li {
   color: black;
 } 
 
-.navbar .nav-item:hover .nav-link {
-  color: white;
+.navbar .nav-item:hover .nav-link, .navbar .nav-item:hover li.active {
+  color: darkcyan;
 }
 
 
-#navbarboton, #navbarboton2 {
-  background: #89D370;
-  color: black;
+#navbarboton, #navbarbotonbuscar {
+  background: #001F3F;
+  color:white;
 }
 
-#navbarboton:hover, #navbarboton2:hover,{
-  color: white;
+#navbarboton:hover, #navbarbotonbuscar:hover,{
+  color: darkcyan;
 }
 
 
-#navbarboton .navbar-link, #navbarboton2 .navbar-link{
+#navbarboton .navbar-link, #navbarbotonbuscar .navbar-link{
   margin: 10pt;
   display: none;
 }
 
 @media screen and (max-width: 991px) {
   nav.navbar li{
-    background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
-    background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 ); 
+    background:#e2e2e2;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75); 
+    z-index: 1000;
     border-style: dotted;
-    border-bottom: 1pt;
-    display: block;
-    width: 50%;
-    height: 40pt;
+    border-bottom: 2pt;
+    width: 70%;
+    height: 45pt;
   }
 
   .navbar .nav-item .nav-link{
@@ -72,20 +73,8 @@ nav.navbar  li {
     margin-left: 10pt;
   }
 
-  #navbarboton2{
-    position: relative;
-    margin-left: 10pt;
-
-  }
-
-  .navbar .nav-item  form{
-    position: relative;
-    margin-left: 10pt;
-  }
-
   .navbar .nav-item  input{
-    width:60pt; 
-    margin-right: 10pt;
+    width:150pt; 
   }
 }
  

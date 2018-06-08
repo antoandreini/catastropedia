@@ -4,7 +4,7 @@ class ArticulosController < ApplicationController
   # GET /articulos
   # GET /articulos.json
   def index
-    @articulos = Articulo.all
+    @articulos = Articulo.all.reverse
   end
 
   # GET /articulos/1
@@ -32,7 +32,7 @@ class ArticulosController < ApplicationController
     @articulo.user = current_user
     respond_to do |format|
       if @articulo.save
-        format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
+        format.html { redirect_to @articulo }
         format.json { render :show, status: :created, location: @articulo }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class ArticulosController < ApplicationController
   def update
     respond_to do |format|
       if @articulo.update(articulo_params)
-        format.html { redirect_to @articulo, notice: 'Articulo was successfully updated.' }
+        format.html { redirect_to @articulo, notice: 'Artículo editado correctamente' }
         format.json { render :show, status: :ok, location: @articulo }
       else
         format.html { render :edit }
@@ -60,7 +60,7 @@ class ArticulosController < ApplicationController
   def destroy
     @articulo.destroy
     respond_to do |format|
-      format.html { redirect_to articulos_url, notice: 'Articulo was successfully destroyed.' }
+      format.html { redirect_to articulos_url, notice: 'Artículo eliminado correctamente.' }
       format.json { head :no_content }
     end
   end

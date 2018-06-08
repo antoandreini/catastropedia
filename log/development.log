@@ -20368,6 +20368,7 @@ Processing by AlertaController#index as HTML
   [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
   ↳ app/controllers/alerta_controller.rb:7
   Rendering alerta/index.html.erb within layouts/application
+<<<<<<< HEAD
   Rendered alerta/index.html.erb within layouts/application (1.5ms)
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/views/layouts/_header.html.erb:20
@@ -20412,10 +20413,144 @@ Completed 200 OK in 2551ms (Views: 2547.7ms | ActiveRecord: 1.0ms)
 
 
 Started GET "/" for 127.0.0.1 at 2018-06-08 00:17:41 -0300
+=======
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 38.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:14:06 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:22
+  Rendered articulos/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 42.1ms | ActiveRecord: 7.7ms)
+
+
+Started DELETE "/articulos/5" for 127.0.0.1 at 2018-06-08 00:14:09 -0300
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DuBr2MlRY2RRlwtVWu1pgYqQKQNnT0LCIOtQi2h3R59t6JcR1GLxz7mFgTRutnCFGdm7ToVGt5BOBofim6Lnuw==", "id"=>"5"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[36mArticulo Destroy (0.8ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articulos_controller.rb:61
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 20ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:14:09 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:22
+  Rendered articulos/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/articulos/4" for 127.0.0.1 at 2018-06-08 00:14:33 -0300
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"V+xfvvnFBIqtMTcGadwqVkwmo4VxN6JBWVhkwWjJwB405KN35PaWIUUjvWddhzNS328xyJM+VxM3tbOomxxgOg==", "id"=>"4"}
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[36mArticulo Destroy (0.7ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articulos_controller.rb:61
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 19ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:14:33 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:14:52 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 32.5ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/novedads/11" for 127.0.0.1 at 2018-06-08 00:16:30 -0300
+Processing by NovedadsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LoOzt40fbpN9FHkfjEnCvFEIcNVafBK4LlSsdNkwws9Ni09+kCz8OJUG8364Etu4wkHimLh15+pAuXsdKuVi6w==", "id"=>"11"}
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT  "novedads".* FROM "novedads" WHERE "novedads"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/novedads_controller.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[36mNovedad Destroy (0.4ms)[0m  [1m[31mDELETE FROM "novedads" WHERE "novedads"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[35m (49.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/novedads_controller.rb:59
+Redirected to http://localhost:3000/novedads
+Completed 302 Found in 67ms (ActiveRecord: 53.5ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:16:30 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.7ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 47.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/novedads/new" for 127.0.0.1 at 2018-06-08 00:16:42 -0300
+Processing by NovedadsController#new as HTML
+Redirected to http://localhost:3000/novedads
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:16:42 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 38.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:16:47 -0300
+>>>>>>> 13361d87b036c92c8769c8264f630fdb9ec2bf1e
 Processing by AlertaController#index as HTML
   [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
   ↳ app/controllers/alerta_controller.rb:7
   Rendering alerta/index.html.erb within layouts/application
+<<<<<<< HEAD
   Rendered alerta/index.html.erb within layouts/application (0.8ms)
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/views/layouts/_header.html.erb:20
@@ -20460,10 +20595,125 @@ Completed 200 OK in 98ms (Views: 87.8ms | ActiveRecord: 2.4ms)
 
 
 Started GET "/" for 127.0.0.1 at 2018-06-08 00:23:50 -0300
+=======
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 37.9ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/alerta/6" for 127.0.0.1 at 2018-06-08 00:16:53 -0300
+Processing by AlertaController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cgDlLHGRrENKWsTsOE5aEQg5mNw2Sv5lbdmRWabXKiERCBnlbKI+6KJITo0MFUMVm3AKkdRDCzcDNEYwVQKKBQ==", "id"=>"6"}
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT  "alerta".* FROM "alerta" WHERE "alerta"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/alerta_controller.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/alerta_controller.rb:60
+  [1m[36mAlertum Destroy (0.3ms)[0m  [1m[31mDELETE FROM "alerta" WHERE "alerta"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/alerta_controller.rb:60
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/alerta_controller.rb:60
+Redirected to http://localhost:3000/alerta
+Completed 302 Found in 15ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/alerta" for 127.0.0.1 at 2018-06-08 00:16:53 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:20
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-06-08 00:17:33 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wQ2faYHrw9X+Gp1rv6bxvyVAqhSuGD6CfBztKyWpU4SiBWOgnNhRfhYIFwqL/ei7tgk4WUwRy9AS8TpC1nzzoA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:17:33 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:240
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mNovedad Create (0.3ms)[0m  [1m[32mINSERT INTO "novedads" ("user_id", "titulo", "fecha", "copete", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_id", 1], ["titulo", "50 años de erupciones volcánicas"], ["fecha", "2018-06-08 03:17:42.915420"], ["copete", "Desde 1968 se han confirmado más de 1.700 emisiones violentas de volcanes en todo el mundo; la de mayor magnitud fue la del Pinatubo (Filipinas) en 1991"], ["imagen", "http://de10.com.mx/sites/default/files/styles/detalle_nota/public/2018/06/04/guatemala_volcan_55888135_0.jpg?itok=sk2E3wbX"], ["altimg", "Volcán en erupción"], ["contenido", "En los últimos 50 años la erupción más potente fue la del Pinatubo (isla de Luzón, Filipinas), que en 1991 alcanzó un seis en la escala. Más atrás en el tiempo, la del Krakatoa (Indonesia) en 1883 llegó también a ese mismo nivel y la del Tambora (también en Indonesia), en 1815, a siete. Los datos proceden de la base Global Volcanism Program, del Instituto Smithsoniano y la cartografía muestra los topónimos en inglés."], ["created_at", "2018-06-08 03:17:42.933473"], ["updated_at", "2018-06-08 03:17:42.933473"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mNovedad Create (0.6ms)[0m  [1m[32mINSERT INTO "novedads" ("user_id", "titulo", "fecha", "copete", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Salta contaría con un cuerpo de rescate para catástrofes de grandes magnitudes"], ["fecha", "2018-06-08 03:17:42.950268"], ["copete", "Néstor Ruíz de Los Llanos, Secretario de Protección Civil en diálogo con InformateSalta anunció la convocatoria de voluntarios. \"En un año podríamos contar con este grupo que actuaría en el país y países limítrofes\" afirmó."], ["imagen", "http://informatesalta.com.ar/download/multimedia.miniatura.8d2cba220ae1771a.72657363617465735f6d696e6961747572612e6a7067.jpg"], ["altimg", "Equipo de rescate trabajando en un derrumbe"], ["contenido", "Actualmente la ONU tiene autorizado en América cuatro grupos de este tipo, en países como EEUU, Chile y Colombia. En Salta se busca conseguir conformar este grupo justamente aprovechando que Nación está lanzando la reglamentación para la acreditación Nacional de Equipos de Búsqueda y Rescate dentro de los estándares internacionales. Una vez conseguido, calculan que en un año, podrán aspirar a ser acreditados y convertirse así en la primera provincia en conseguirlo."], ["created_at", "2018-06-08 03:17:42.954298"], ["updated_at", "2018-06-08 03:17:42.954298"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAlertum Create (0.6ms)[0m  [1m[32mINSERT INTO "alerta" ("user_id", "titulo", "zonas", "fecha", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Vientos intensos en zona cordillerana"], ["zonas", "Zona cordillerana de Catamarca, Zona cordillerana de La Rioja, Zona cordillerana de Mendoza, Zona cordillerana de Salta, Zona cordillerana de San Juan"], ["fecha", "2018-06-08 03:17:42.971171"], ["descripcion", "Continuarán soplando vientos del sector oeste con velocidades entre 60 y 90 km/h con ráfagas, especialmente por encima de los 4000 msnm. Es posible la ocurrencia de viento blanco en la zona cordillerana de San Juan y Mendoza. Los vientos intensos se mantendrán al menos hasta la mañana del martes 5 de junio."], ["created_at", "2018-06-08 03:17:42.990777"], ["updated_at", "2018-06-08 03:17:42.990777"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAlertum Create (0.7ms)[0m  [1m[32mINSERT INTO "alerta" ("user_id", "titulo", "zonas", "fecha", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Nevadas intensas"], ["zonas", "Zona cordillerana del noroeste de Chubut, Zona cordillerana del sur de Neuquén, Zona cordillerana de Río Negro"], ["fecha", "2018-06-08 03:17:43.002174"], ["descripcion", "El ingreso de aire frío provocará nevadas a partir de lo que resta de hoy y al menos hasta la tarde del viernes 8 sobre el área de cobertura. Algunas de estas nevadas pueden ser de intensidad fuerte."], ["created_at", "2018-06-08 03:17:43.003780"], ["updated_at", "2018-06-08 03:17:43.003780"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mArticulo Create (0.6ms)[0m  [1m[32mINSERT INTO "articulos" ("user_id", "titulo", "fecha", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["titulo", "¿Que hacer en caso de inundación?"], ["fecha", "2018-06-08 03:17:43.019251"], ["imagen", "https://www.miaminews24.com/wp-content/uploads/2017/06/Emiten-alertas-de-inundaci%C3%B3n-para-varias-partes-del-sur-de-la-Florida.jpg"], ["altimg", "Inundación en Florida"], ["contenido", "Tenga en su plan de protección los artículos esenciales para hacer frente a las emergencias, como por ejemplo: materiales de construcción como láminas de madera, envolturas de plástico, clavos, martillo, pala, sacos de arena, etc. Además prepare un paquete de primeros auxilios, medicinas, comida no perecedera, enlatados y abrelatas y por supuesto agua potable; dinero en efectivo y tarjetas de crédito; radios con pilas, linternas y mecanismos de calentar agua o comida; asegúrese de poseer vestimenta y zapatos adecuados para la lluvia como botas e impermeables."], ["created_at", "2018-06-08 03:17:43.046406"], ["updated_at", "2018-06-08 03:17:43.046406"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mArticulo Create (0.8ms)[0m  [1m[32mINSERT INTO "articulos" ("user_id", "titulo", "fecha", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Técnicas de extinción de incendios forestales"], ["fecha", "2018-06-08 03:17:43.058563"], ["imagen", "https://i.avoz.es/default/2017/06/20/00121497914101685336704/Foto/afp_20170619_064034950.jpg"], ["altimg", "Incendio forestal"], ["contenido", "El ataque al fuego puede ser directo o indirecto. El ataque directo es el que aplica cualquier tratamiento directamente sobre el material en combustión, como es mojarlo, axfisiarlo, o aplacarlo químicamente, o separando físicamente el combustible que está ardiendo del que aún no. En esto juega un papel fundamental el uso de camiones cisterna e hidroaviones, con los que se aplica agua o agente extintor al fuego. Por su parte, el ataque indirecto es el que prepara tácticas de extinción a una cierta distancia del fuego que se aproxima. Reducción de combustible, cortafuegos de contingencia, contrafuegos y el empapado de combustibles aún no quemados son algunos ejemplos."], ["created_at", "2018-06-08 03:17:43.063214"], ["updated_at", "2018-06-08 03:17:43.063214"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:17:46 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+>>>>>>> 13361d87b036c92c8769c8264f630fdb9ec2bf1e
 Processing by AlertaController#index as HTML
   [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
   ↳ app/controllers/alerta_controller.rb:7
   Rendering alerta/index.html.erb within layouts/application
+<<<<<<< HEAD
   Rendered alerta/index.html.erb within layouts/application (1.1ms)
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/views/layouts/_header.html.erb:20
@@ -20496,10 +20746,69 @@ Completed 200 OK in 2674ms (Views: 2670.1ms | ActiveRecord: 1.2ms)
 
 
 Started GET "/" for 127.0.0.1 at 2018-06-08 00:26:05 -0300
+=======
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 188ms (Views: 171.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-08 00:17:50 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 89ms (Views: 67.3ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-08 00:17:57 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w3hXGrC8AgtC4BBVb0CMuVP0Q8U8VgQk0GHxmQWW4LCgZd5wzQL70eXIWNb8O+l1M+93nY6dXpZNtEENjSNavA==", "user"=>{"email"=>"brianf_lp@hotmail.c", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brianf_lp@hotmail.c"], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w3hXGrC8AgtC4BBVb0CMuVP0Q8U8VgQk0GHxmQWW4LCgZd5wzQL70eXIWNb8O+l1M+93nY6dXpZNtEENjSNavA==", "user"=>{"email"=>"brianf_lp@hotmail.c", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 156ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-08 00:17:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-08 00:18:01 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MwFqgJk6sKWphdpotJlJBGFIicU2ePWKkd19o354PNdQHOPq5IRJfw6tkusn4izIAVO9nYSzrzgMCM039s2G2w==", "user"=>{"email"=>"brianf_lp@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brianf_lp@hotmail.com"], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-06-08 03:18:01.184352"], ["last_sign_in_at", "2018-06-08 03:13:12.226930"], ["sign_in_count", 40], ["updated_at", "2018-06-08 03:18:01.185544"], ["id", 1]]
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:18:01 -0300
+>>>>>>> 13361d87b036c92c8769c8264f630fdb9ec2bf1e
 Processing by AlertaController#index as HTML
   [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
   ↳ app/controllers/alerta_controller.rb:7
   Rendering alerta/index.html.erb within layouts/application
+<<<<<<< HEAD
   Rendered alerta/index.html.erb within layouts/application (1.3ms)
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   ↳ app/views/layouts/_header.html.erb:20
@@ -20613,5 +20922,2335 @@ Processing by AlertaController#index as HTML
   ↳ app/views/layouts/_header.html.erb:20
   Rendered layouts/_header.html.erb (2.7ms)
 Completed 200 OK in 2784ms (Views: 2780.4ms | ActiveRecord: 1.3ms)
+=======
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/alerta/13/edit" for 127.0.0.1 at 2018-06-08 00:18:03 -0300
+Processing by AlertaController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT  "alerta".* FROM "alerta" WHERE "alerta"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/alerta_controller.rb:70
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:18:03 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.3ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/alerta/13" for 127.0.0.1 at 2018-06-08 00:18:07 -0300
+Processing by AlertaController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0UgCoChtB5fnoa+4Fxese5fjNm2cxiDY9oB8THVS6YFUYUchdvTigG0mkCtfE5fQWtg3QieApkzYhdwFn5WUGg==", "id"=>"13"}
+  [1m[36mAlertum Load (0.3ms)[0m  [1m[34mSELECT  "alerta".* FROM "alerta" WHERE "alerta"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/alerta_controller.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/alerta_controller.rb:60
+  [1m[36mAlertum Destroy (0.3ms)[0m  [1m[31mDELETE FROM "alerta" WHERE "alerta"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/alerta_controller.rb:60
+  [1m[35m (49.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/alerta_controller.rb:60
+Redirected to http://localhost:3000/alerta
+Completed 302 Found in 56ms (ActiveRecord: 50.7ms)
+
+
+Started GET "/alerta" for 127.0.0.1 at 2018-06-08 00:18:07 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 46.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:18:10 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.7ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 32.4ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/novedads/13" for 127.0.0.1 at 2018-06-08 00:18:15 -0300
+Processing by NovedadsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mNovedad Load (1.0ms)[0m  [1m[34mSELECT  "novedads".* FROM "novedads" WHERE "novedads"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/novedads_controller.rb:69
+  Rendering novedads/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/show.html.erb:23
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/show.html.erb:36
+  Rendered novedads/show.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 66.0ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/novedads/13" for 127.0.0.1 at 2018-06-08 00:18:19 -0300
+Processing by NovedadsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6m2MFF/C6qDXX/lKvBNfNB/6QLD9pq+DFhQdEROeRHlvRMmVAVsPt13Yxtn0F2Sf0sFBn0bgKRc4Eb1Y+Vk54g==", "id"=>"13"}
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT  "novedads".* FROM "novedads" WHERE "novedads"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/novedads_controller.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[36mNovedad Destroy (0.4ms)[0m  [1m[31mDELETE FROM "novedads" WHERE "novedads"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/novedads_controller.rb:59
+Redirected to http://localhost:3000/novedads
+Completed 302 Found in 21ms (ActiveRecord: 15.9ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:18:19 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.6ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/novedads/12" for 127.0.0.1 at 2018-06-08 00:18:30 -0300
+Processing by NovedadsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rEh8YfPIKp3GbuQFGfyz7nGB6wF7alTWclkrAjFYAeMpYTngrVHPikzp25ZR+IhFvLrqLsAs0kJcXItL2598eA==", "id"=>"12"}
+  [1m[36mNovedad Load (0.3ms)[0m  [1m[34mSELECT  "novedads".* FROM "novedads" WHERE "novedads"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/novedads_controller.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[36mNovedad Destroy (0.3ms)[0m  [1m[31mDELETE FROM "novedads" WHERE "novedads"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/novedads_controller.rb:59
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/novedads_controller.rb:59
+Redirected to http://localhost:3000/novedads
+Completed 302 Found in 18ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:18:30 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.8ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 42.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:18:33 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.4ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 29.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/articulos/7" for 127.0.0.1 at 2018-06-08 00:18:35 -0300
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticulo Load (0.2ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/show.html.erb:38
+  Rendered articulos/show.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/articulos/7" for 127.0.0.1 at 2018-06-08 00:18:38 -0300
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cde0lOPDnhvipLT0ksbcIs48B1WD84XQCG+DNFaDAD6M/vEVvVp7DGgji2fawueJAwcGeji1A0QmaiN9vER9pQ==", "id"=>"7"}
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[36mArticulo Destroy (0.4ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/articulos_controller.rb:61
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articulos_controller.rb:61
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 14ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:18:38 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articulos/6/edit" for 127.0.0.1 at 2018-06-08 00:18:45 -0300
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:71
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:18:45 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.3ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-06-08 00:18:49 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jcmTDAC0RvXZEFBPbYl+MQWWj0OQBG8wmubWOGladhEI4NaNXi2j4lOXb9wljUWayK2ObCtC6aS043Zxg50Lig=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:18:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+>>>>>>> 13361d87b036c92c8769c8264f630fdb9ec2bf1e
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:32:15 -0300
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+):
+  
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `new'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:90:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/migration.rb:554:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/callbacks.rb:98:in `run_callbacks'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:33:03 -0300
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+):
+  
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `new'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:90:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/migration.rb:554:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/callbacks.rb:98:in `run_callbacks'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:83
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mNovedad Create (15.4ms)[0m  [1m[32mINSERT INTO "novedads" ("user_id", "titulo", "fecha", "copete", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_id", 1], ["titulo", "50 años de erupciones volcánicas"], ["fecha", "2018-06-08 03:33:23.648789"], ["copete", "Desde 1968 se han confirmado más de 1.700 emisiones violentas de volcanes en todo el mundo; la de mayor magnitud fue la del Pinatubo (Filipinas) en 1991"], ["imagen", "http://de10.com.mx/sites/default/files/styles/detalle_nota/public/2018/06/04/guatemala_volcan_55888135_0.jpg?itok=sk2E3wbX"], ["altimg", "Volcán en erupción"], ["contenido", "En los últimos 50 años la erupción más potente fue la del Pinatubo (isla de Luzón, Filipinas), que en 1991 alcanzó un seis en la escala. Más atrás en el tiempo, la del Krakatoa (Indonesia) en 1883 llegó también a ese mismo nivel y la del Tambora (también en Indonesia), en 1815, a siete. Los datos proceden de la base Global Volcanism Program, del Instituto Smithsoniano y la cartografía muestra los topónimos en inglés."], ["created_at", "2018-06-08 03:33:23.704719"], ["updated_at", "2018-06-08 03:33:23.704719"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mNovedad Create (0.9ms)[0m  [1m[32mINSERT INTO "novedads" ("user_id", "titulo", "fecha", "copete", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Salta contaría con un cuerpo de rescate para catástrofes de grandes magnitudes"], ["fecha", "2018-06-08 03:33:23.742384"], ["copete", "Néstor Ruíz de Los Llanos, Secretario de Protección Civil en diálogo con InformateSalta anunció la convocatoria de voluntarios. \"En un año podríamos contar con este grupo que actuaría en el país y países limítrofes\" afirmó."], ["imagen", "http://informatesalta.com.ar/download/multimedia.miniatura.8d2cba220ae1771a.72657363617465735f6d696e6961747572612e6a7067.jpg"], ["altimg", "Equipo de rescate trabajando en un derrumbe"], ["contenido", "Actualmente la ONU tiene autorizado en América cuatro grupos de este tipo, en países como EEUU, Chile y Colombia. En Salta se busca conseguir conformar este grupo justamente aprovechando que Nación está lanzando la reglamentación para la acreditación Nacional de Equipos de Búsqueda y Rescate dentro de los estándares internacionales. Una vez conseguido, calculan que en un año, podrán aspirar a ser acreditados y convertirse así en la primera provincia en conseguirlo."], ["created_at", "2018-06-08 03:33:23.746191"], ["updated_at", "2018-06-08 03:33:23.746191"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAlertum Create (1.5ms)[0m  [1m[32mINSERT INTO "alerta" ("user_id", "titulo", "zonas", "fecha", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Vientos intensos en zona cordillerana"], ["zonas", "Zona cordillerana de Catamarca, Zona cordillerana de La Rioja, Zona cordillerana de Mendoza, Zona cordillerana de Salta, Zona cordillerana de San Juan"], ["fecha", "2018-06-08 03:33:23.755746"], ["descripcion", "Continuarán soplando vientos del sector oeste con velocidades entre 60 y 90 km/h con ráfagas, especialmente por encima de los 4000 msnm. Es posible la ocurrencia de viento blanco en la zona cordillerana de San Juan y Mendoza. Los vientos intensos se mantendrán al menos hasta la mañana del martes 5 de junio."], ["created_at", "2018-06-08 03:33:23.772159"], ["updated_at", "2018-06-08 03:33:23.772159"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAlertum Create (0.9ms)[0m  [1m[32mINSERT INTO "alerta" ("user_id", "titulo", "zonas", "fecha", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Nevadas intensas"], ["zonas", "Zona cordillerana del noroeste de Chubut, Zona cordillerana del sur de Neuquén, Zona cordillerana de Río Negro"], ["fecha", "2018-06-08 03:33:23.789708"], ["descripcion", "El ingreso de aire frío provocará nevadas a partir de lo que resta de hoy y al menos hasta la tarde del viernes 8 sobre el área de cobertura. Algunas de estas nevadas pueden ser de intensidad fuerte."], ["created_at", "2018-06-08 03:33:23.791891"], ["updated_at", "2018-06-08 03:33:23.791891"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mArticulo Create (1.6ms)[0m  [1m[32mINSERT INTO "articulos" ("user_id", "titulo", "fecha", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["titulo", "¿Que hacer en caso de inundación?"], ["fecha", "2018-06-08 03:33:23.811570"], ["imagen", "https://www.miaminews24.com/wp-content/uploads/2017/06/Emiten-alertas-de-inundaci%C3%B3n-para-varias-partes-del-sur-de-la-Florida.jpg"], ["altimg", "Inundación en Florida"], ["contenido", "Tenga en su plan de protección los artículos esenciales para hacer frente a las emergencias, como por ejemplo: materiales de construcción como láminas de madera, envolturas de plástico, clavos, martillo, pala, sacos de arena, etc. Además prepare un paquete de primeros auxilios, medicinas, comida no perecedera, enlatados y abrelatas y por supuesto agua potable; dinero en efectivo y tarjetas de crédito; radios con pilas, linternas y mecanismos de calentar agua o comida; asegúrese de poseer vestimenta y zapatos adecuados para la lluvia como botas e impermeables."], ["created_at", "2018-06-08 03:33:23.833878"], ["updated_at", "2018-06-08 03:33:23.833878"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mArticulo Create (0.7ms)[0m  [1m[32mINSERT INTO "articulos" ("user_id", "titulo", "fecha", "imagen", "altimg", "contenido", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", 1], ["titulo", "Técnicas de extinción de incendios forestales"], ["fecha", "2018-06-08 03:33:23.841740"], ["imagen", "https://i.avoz.es/default/2017/06/20/00121497914101685336704/Foto/afp_20170619_064034950.jpg"], ["altimg", "Incendio forestal"], ["contenido", "El ataque al fuego puede ser directo o indirecto. El ataque directo es el que aplica cualquier tratamiento directamente sobre el material en combustión, como es mojarlo, axfisiarlo, o aplacarlo químicamente, o separando físicamente el combustible que está ardiendo del que aún no. En esto juega un papel fundamental el uso de camiones cisterna e hidroaviones, con los que se aplica agua o agente extintor al fuego. Por su parte, el ataque indirecto es el que prepara tácticas de extinción a una cierta distancia del fuego que se aproxima. Reducción de combustible, cortafuegos de contingencia, contrafuegos y el empapado de combustibles aún no quemados son algunos ejemplos."], ["created_at", "2018-06-08 03:33:23.844670"], ["updated_at", "2018-06-08 03:33:23.844670"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:33:27 -0300
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+):
+  
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `new'
+vendor/bundle/ruby/2.3.0/gems/pg-1.0.0/lib/pg.rb:56:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:90:in `connection'
+vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/migration.rb:554:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/callbacks.rb:98:in `run_callbacks'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:33:41 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.3.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (33.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 500 Internal Server Error in 479ms (ActiveRecord: 12.9ms)
+
+
+  
+SyntaxError (/home/aldo/catastropedia/app/views/layouts/_header.html.erb:45: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;     else 
+                  ^):
+  
+app/views/layouts/_header.html.erb:45: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___3347741772226789416_33870380'
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:36:12 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:38:51 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:39:23 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.9ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 91ms (Views: 64.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:39:39 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 114ms (Views: 85.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 00:39:52 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 61.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:39:58 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 84ms (Views: 76.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:40:00 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 96ms (Views: 90.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:40:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 137ms (Views: 131.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:40:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 128ms (Views: 122.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:42:57 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 3254ms (Views: 3248.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 00:43:25 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (0.5ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 92ms (Views: 85.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:43:26 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (4.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 142ms (Views: 132.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:43:28 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 113ms (Views: 107.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:44:07 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2613ms (Views: 2609.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:56:05 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2628ms (Views: 2621.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:56:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2521ms (Views: 2517.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:57:18 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2608ms (Views: 2604.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:58:05 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2704ms (Views: 2700.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:58:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:58:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 91ms (Views: 86.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 00:59:10 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2783ms (Views: 2779.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:35 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 61.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:37 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 121ms (Views: 115.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.6ms)
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:46 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 3658ms (Views: 3652.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (161.4ms)
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (5.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 998ms (Views: 965.1ms | ActiveRecord: 24.5ms)
+
+
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 155ms (Views: 133.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:09:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 112.5ms | ActiveRecord: 4.3ms)
+
+
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 3831ms (Views: 3822.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:25:15 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2835ms (Views: 2830.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:25:46 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2542ms (Views: 2537.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:28:32 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2752ms (Views: 2748.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:29:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2687ms (Views: 2681.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:30:29 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2483ms (Views: 2478.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:31:13 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2491ms (Views: 2487.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:31:26 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2667ms (Views: 2662.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:32:20 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:32:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 69ms (Views: 63.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:32:49 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2781ms (Views: 2776.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:33:12 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.1ms)
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:33:14 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 2834ms (Views: 2829.8ms | ActiveRecord: 1.4ms)
+
+
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2882ms (Views: 2876.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:33:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 2539ms (Views: 2536.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:33:48 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2872ms (Views: 2865.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:34:43 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2481ms (Views: 2477.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:35:08 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2528ms (Views: 2523.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:35:35 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2637ms (Views: 2632.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:35:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2727ms (Views: 2723.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:37:29 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 68ms (Views: 61.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:37:38 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:45:57 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 81ms (Views: 76.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:45:59 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:00 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 76ms (Views: 71.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 115ms (Views: 109.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:02 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 101ms (Views: 95.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:42 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:43 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 111ms (Views: 105.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 110ms (Views: 102.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:53 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 72.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:54 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 121ms (Views: 115.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:55 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.3ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 135ms (Views: 125.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:46:56 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 109ms (Views: 102.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:47:30 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2581ms (Views: 2577.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:48:17 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2524ms (Views: 2520.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:48:31 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2491ms (Views: 2486.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:49:14 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2861ms (Views: 2855.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:49:56 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2596ms (Views: 2591.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:50:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 95ms (Views: 89.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:50:51 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:51:14 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:51:28 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:35 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 74.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:37 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 113ms (Views: 106.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:38 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 98.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:40 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 122ms (Views: 114.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:42 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 106ms (Views: 100.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 01:52:42 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.2ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/novedads/index.html.erb:33
+  Rendered novedads/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 108ms (Views: 101.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:52:44 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (1.1ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 116ms (Views: 109.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:52:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 126ms (Views: 118.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:52:49 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 150ms (Views: 143.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:53:46 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 01:53:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:53:51 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 72.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:55:28 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2390ms (Views: 2384.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:55:53 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2489ms (Views: 2485.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:56:35 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2521ms (Views: 2517.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:56:56 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2490ms (Views: 2485.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:57:48 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2344ms (Views: 2338.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:58:35 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...und: background": expected ";", was ": rgba(226,226,..."):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:10
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3347741772226789416_69939412480580'
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 01:58:47 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2708ms (Views: 2704.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:01:01 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...bkit-box-shadow": expected ";", was ": 10px 10px 5px..."):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:10
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3347741772226789416_69939416592540'
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:01:16 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2581ms (Views: 2576.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:01:54 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 3573ms (Views: 3567.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:02:33 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2438ms (Views: 2433.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:03:13 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2464ms (Views: 2459.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:03:49 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.5ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 2566ms (Views: 2561.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:05:30 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 68.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:05:50 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.7ms)
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:05:50 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 4290ms (Views: 4286.8ms | ActiveRecord: 1.1ms)
+
+
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 4084ms (Views: 4054.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:06:40 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (1.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2651ms (Views: 2644.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:06:54 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.8ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...bkit-box-shadow": expected ";", was ": 5px 5px 5px 0..."):
+    4: <head>
+    5:   <link rel="shortcut icon" href="http://www.iconj.com/ico/k/x/kx5bc3q0j6.ico" type="image/x-icon" />
+    6:   <title>Catastropedia</title>
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    9:   <%= csrf_meta_tags %>
+   10:   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/application.scss:12
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3347741772226789416_69939523605260'
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:07:11 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.7ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2420ms (Views: 2415.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:07:50 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articulos/index.html.erb:32
+  Rendered articulos/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2585ms (Views: 2580.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:08:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 123ms (Views: 113.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:09:30 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 80.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:09:56 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2559ms (Views: 2555.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:10:15 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2556ms (Views: 2552.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:10:41 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2243ms (Views: 2238.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:11:11 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2419ms (Views: 2415.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:11:34 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.0ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2375ms (Views: 2369.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:11:50 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2381ms (Views: 2377.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:12:12 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2380ms (Views: 2375.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:13:05 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2387ms (Views: 2382.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:13:33 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2451ms (Views: 2446.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:15:54 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2543ms (Views: 2538.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:16:16 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2468ms (Views: 2463.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:17:08 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (2.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2590ms (Views: 2583.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:17:34 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 2469ms (Views: 2464.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:17:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2597ms (Views: 2593.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:18:03 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 2344ms (Views: 2339.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:18:24 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2456ms (Views: 2451.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:19:07 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2253ms (Views: 2249.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:19:29 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2365ms (Views: 2359.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:19:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2512ms (Views: 2505.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:20:00 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.9ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2440ms (Views: 2436.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:20:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 2453ms (Views: 2449.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:21:08 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 2271ms (Views: 2266.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:21:31 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2697ms (Views: 2693.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:22:47 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.4ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2937ms (Views: 2931.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:23:05 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2442ms (Views: 2438.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:23:44 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2527ms (Views: 2523.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:23:57 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2386ms (Views: 2380.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:24:15 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2491ms (Views: 2485.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:24:36 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/alerta/index.html.erb:37
+  Rendered alerta/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 2431ms (Views: 2426.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:15 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.1ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 121ms (Views: 117.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:19 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 73ms (Views: 67.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:21 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:22 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.2ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 101ms (Views: 96.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 86ms (Views: 82.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:23 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.7ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 97ms (Views: 93.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:31:45 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (1.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 67ms (Views: 62.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:32:59 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/aldo/Downloads/if_world_43613.png" for 127.0.0.1 at 2018-06-08 02:33:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/home/aldo/Downloads/if_world_43613.png"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:33:01 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.8ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 67ms (Views: 63.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/aldo/Downloads/if_world_43613.png" for 127.0.0.1 at 2018-06-08 02:33:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/home/aldo/Downloads/if_world_43613.png"):
+  
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:30:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `catch'
+vendor/bundle/ruby/2.3.0/gems/web-console-3.6.2/lib/web_console/middleware.rb:20:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:38:in `call_app'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `block in call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:28:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/tagged_logging.rb:71:in `tagged'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.3.0/gems/activesupport-5.2.0/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/executor.rb:14:in `call'
+vendor/bundle/ruby/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/middleware/static.rb:127:in `call'
+vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb:524:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+vendor/bundle/ruby/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:33:33 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:34:13 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 2434ms (Views: 2430.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:34:16 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.5ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 83ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/novedads" for 127.0.0.1 at 2018-06-08 02:34:39 -0300
+Processing by NovedadsController#index as HTML
+  [1m[36mNovedad Load (1.2ms)[0m  [1m[34mSELECT "novedads".* FROM "novedads"[0m
+  ↳ app/controllers/novedads_controller.rb:7
+  Rendering novedads/index.html.erb within layouts/application
+  Rendered novedads/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-06-08 02:34:41 -0300
+Processing by ArticulosController#index as HTML
+  [1m[36mArticulo Load (0.9ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 98ms (Views: 94.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-08 02:34:43 -0300
+Processing by AlertaController#index as HTML
+  [1m[36mAlertum Load (0.6ms)[0m  [1m[34mSELECT "alerta".* FROM "alerta" ORDER BY "alerta"."id" ASC[0m
+  ↳ app/controllers/alerta_controller.rb:7
+  Rendering alerta/index.html.erb within layouts/application
+  Rendered alerta/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 91ms (Views: 87.7ms | ActiveRecord: 0.6ms)
 
 
