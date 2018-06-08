@@ -1,0 +1,53 @@
+<%if user_signed_in?%>
+ <div class="row">
+ <div class="col">
+<nav aria-label="breadcrumb" class="breadcrumb">
+  <ol class="breadcrumb" >
+    <li class="breadcrumb-item" ><a href="/">Inicio</a></li>
+    <li class="breadcrumb-item active"id="activo" aria-current="page">Contacto</li>
+  </ol>
+</nav>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col">
+      <h1 align="center" style="font-weight:bold;color:#001F3F">Mensajes de contacto</h1>
+    </div>
+  </div>
+<div class="row">
+    <div class="col">
+      <div class="jumbotron jumbotron-fluid jumbo"style="background-color:#001F3F">
+      <%- flash.each do |name, msg| -%>
+          <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="alert alert-light" style="font-weight:bold;color:#C70E0B" role="alert">
+            <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+            </div>
+          </div>
+          </div>
+          <%- end -%> 
+        <div class="container">
+          <% @contactos.each do |contacto| %>
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10">
+                    <div class="card">
+                      <div class="card-body">
+                      <div class="row">
+                      <div class="col">
+                        <h3 class="card-title" style="font-weight:bold;color:#C70E0B" ><%= contacto.asunto%></h3>
+                        <p class="card-text"> <%=contacto.mensaje %></p>
+                        <p class="card-text" style="font-weight:bold"> Enviado por: <%=contacto.email %></p>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                <br>
+    <% end %>
+</div>
+    <% end %>

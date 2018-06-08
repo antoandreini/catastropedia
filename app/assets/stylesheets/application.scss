@@ -30,19 +30,37 @@ nav.navbar  li{
   width:auto;
   height: 30pt;
   list-style:none;
+  font-weight: bold;
 }
 .navbar .nav-item .nav-link{
-  color: black;
+  color: #001F3F;
 } 
 
 .navbar .nav-item:hover .nav-link, .navbar .nav-item:hover li.active {
   color: darkcyan;
 }
-
+nav.breadcrumb{
+  float:left;
+}
+ol.breadcrumb{
+  background-color:#ddd;
+}
+li.breadcrumb-item a{
+  font-weight:bold;
+  color:#001F3F;
+}
+li.breadcrumb-item {
+  font-weight:bold;
+}
+#activo {
+  color:black;
+}
 
 #navbarboton, #navbarbotonbuscar {
   background: #001F3F;
+  border-color: #001F3F;
   color:white;
+  font-weight: bold;
 }
 
 #navbarboton:hover, #navbarbotonbuscar:hover,{
